@@ -2055,7 +2055,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.5;
+			opacity: 0.3;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3220,6 +3220,22 @@ input, select, textarea {
 
 	}
 
+	/* one section */
+
+	i.fab {
+		font-size: 18px;
+		align-self: center;
+	}
+
+	ul.actions a {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	#docker {
+		justify-content: space-between;
+	}
+
 	/* one.five section */
 
 	i {
@@ -3235,4 +3251,44 @@ input, select, textarea {
 		justify-content: space-between;
 		height: 125px;
 		flex-wrap: wrap;
+	}
+
+	i.fas {
+		font-size: 18px;
+		align-self: center;
+	}
+
+	/* two section */
+
+	ul.project-ul {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	ul.project-ul > li {
+		padding: 0.5em 0;
+		border-bottom: solid 2px #efefef;
+	}
+
+	ul.project-ul > li:last-child {
+		border-bottom: 0;
+	}
+
+	.project-ul p {
+		font-size: 1em;
+	}
+
+	#main > section {
+		margin: 0;
+	}
+
+	.work-item {
+		margin: 0;
+	}
+
+	/* three section */ 
+
+	.col-8.col-12-small li {
+		list-style: none;
+		display: flex;
 	}
