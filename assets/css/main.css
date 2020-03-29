@@ -3003,10 +3003,11 @@ input, select, textarea {
 
 				#header h1 {
 					font-size: 1.25em;
+					min-width: 225px;
 				}
 
 					#header h1 br {
-						display: none;
+						/* display: none; */
 					}
 
 				#header > .inner {
@@ -3205,7 +3206,7 @@ input, select, textarea {
 			}
 
 				#header h1 br {
-					display: none;
+					/* display: none; */
 				}
 
 		/* Footer */
@@ -3236,6 +3237,34 @@ input, select, textarea {
 		justify-content: space-between;
 	}
 
+	#one .actions {
+		flex-wrap: wrap;
+	}
+
+	@media screen and (max-width: 1119px) {
+		#one .actions > li:first-of-type {
+			margin-bottom: 10px;
+		}
+	}
+
+	@media screen and (max-width: 980px) {
+		#one .actions > li:first-of-type {
+			margin-bottom: 0px;
+		}
+	}
+
+	@media screen and (max-width: 815px) {
+		#one .actions > li:first-of-type {
+			margin-bottom: 10px;
+		}
+	}
+
+	@media screen and (max-width: 414px) {
+		#docker {
+			justify-content: space-evenly;
+		}
+	}
+
 	/* one.five section */
 
 	i {
@@ -3256,6 +3285,104 @@ input, select, textarea {
 	i.fas {
 		font-size: 18px;
 		align-self: center;
+	}
+
+	.skills-container > ul {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		width: 93%;
+    justify-content: space-between;
+		height: 500px;
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+
+	.skills-container {
+		width: 107%;
+	}
+
+	.skills-container li {
+		margin-left: 6px;
+		padding-left: 0;
+	}
+
+	@media screen and (max-width: 1280px) {
+		.skills-container > ul {
+			width: 46.1rem;
+		}
+	}
+
+	@media screen and (max-width: 1160px) {
+		.skills-container {
+			width: 100%;
+		}
+
+		.skills-container > ul {
+			width: 39rem;
+			justify-content: flex-start;
+			height: 570px;
+		}
+
+		.skills-container li {
+			margin-left: 24px;
+		}
+	}
+
+	@media screen and (max-width: 980px) {
+		.skills-container > ul {
+			width: 88vw;
+			justify-content: space-between;
+			height: 500px;
+		}
+	}
+
+	@media screen and (max-width: 845px) {
+		.skills-container > ul {
+			width: 88vw;
+			justify-content: flex-start;
+		}
+
+		.skills-container li {
+			margin-left: 38px;
+		}
+	}
+
+	@media screen and (max-width: 784px) {
+		.skills-container > ul {
+			width: 87vw;
+			height: 650px;
+		}
+
+		.skills-container li {
+			margin-left: 38px;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		.skills-container li {
+			margin-left: 50px;
+		}
+	}
+
+	@media screen and (max-width: 690px) {
+		.skills-container > ul {
+			height: 750px;
+		}
+
+		.skills-container li {
+			margin-left: 11%;
+		}
+	}
+
+	@media screen and (max-width: 545px) {
+		.skills-container i {
+			font-size: 18.4vw;
+		}
+
+		.skills-container img {
+			height: 18.4vw;
+		}
 	}
 
 	/* two section */
@@ -3315,4 +3442,12 @@ input, select, textarea {
 
 	.col-4.col-12-small {
 		margin-top: 0.8em;
+	}
+
+	#two ul.actions { 
+		flex-wrap: wrap;
+	}
+
+	#two ul.actions li {
+		margin-bottom: 15px;
 	}
