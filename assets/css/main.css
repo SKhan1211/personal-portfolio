@@ -3006,10 +3006,6 @@ input, select, textarea {
 					min-width: 225px;
 				}
 
-					#header h1 br {
-						/* display: none; */
-					}
-
 				#header > .inner {
 					margin-bottom: 0;
 				}
@@ -3204,10 +3200,6 @@ input, select, textarea {
 			#header {
 				padding: 4.5em 1.5em;
 			}
-
-				#header h1 br {
-					/* display: none; */
-				}
 
 		/* Footer */
 
